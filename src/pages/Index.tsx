@@ -1,6 +1,6 @@
-
 import React, { useState, useMemo } from 'react';
-import { Search } from 'lucide-react';
+import { Search, ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import FilterSidebar from '../components/FilterSidebar';
 import ProductDetail from '../components/ProductDetail';
@@ -63,7 +63,16 @@ const Index = () => {
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <h1 className="text-2xl font-bold text-gray-900">MINIMALIST</h1>
+            <div className="flex items-center space-x-4">
+              <Link 
+                to="/" 
+                className="flex items-center text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                <ArrowLeft className="w-5 h-5 mr-2" />
+                Back
+              </Link>
+              <h1 className="text-2xl font-bold text-gray-900">MINIMALIST</h1>
+            </div>
             <div className="flex-1 max-w-md mx-8">
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
