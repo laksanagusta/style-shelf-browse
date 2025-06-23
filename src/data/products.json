@@ -1,0 +1,83 @@
+
+[
+  {
+    "id": 1,
+    "name": "Classic White Shirt",
+    "price": 299000,
+    "category": "shirts",
+    "color": "white",
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=600&fit=crop",
+    "description": "Kemeja putih klasik dengan bahan katun premium yang nyaman digunakan sehari-hari."
+  },
+  {
+    "id": 2,
+    "name": "Black Denim Jacket",
+    "price": 449000,
+    "category": "jackets",
+    "color": "black",
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=600&fit=crop",
+    "description": "Jaket denim hitam dengan style modern dan versatile untuk berbagai occasion."
+  },
+  {
+    "id": 3,
+    "name": "Blue Casual Pants",
+    "price": 349000,
+    "category": "pants",
+    "color": "blue",
+    "sizes": ["28", "30", "32", "34", "36"],
+    "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400&h=600&fit=crop",
+    "description": "Celana kasual biru navy dengan cut yang sempurna untuk gaya santai maupun formal."
+  },
+  {
+    "id": 4,
+    "name": "Red Summer Dress",
+    "price": 399000,
+    "category": "dresses",
+    "color": "red",
+    "sizes": ["XS", "S", "M", "L"],
+    "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=600&fit=crop",
+    "description": "Dress musim panas berwarna merah cerah dengan bahan yang ringan dan airy."
+  },
+  {
+    "id": 5,
+    "name": "Gray Sweater",
+    "price": 279000,
+    "category": "sweaters",
+    "color": "gray",
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=600&fit=crop",
+    "description": "Sweater abu-abu dengan bahan wool blend yang hangat dan stylish."
+  },
+  {
+    "id": 6,
+    "name": "White Sneakers",
+    "price": 599000,
+    "category": "shoes",
+    "color": "white",
+    "sizes": ["38", "39", "40", "41", "42", "43"],
+    "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=600&fit=crop",
+    "description": "Sneakers putih minimalis dengan desain clean dan comfortable untuk daily wear."
+  },
+  {
+    "id": 7,
+    "name": "Black Formal Pants",
+    "price": 389000,
+    "category": "pants",
+    "color": "black",
+    "sizes": ["28", "30", "32", "34", "36"],
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&h=600&fit=crop",
+    "description": "Celana formal hitam dengan bahan premium untuk tampilan profesional."
+  },
+  {
+    "id": 8,
+    "name": "Green Casual T-Shirt",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": ["S", "M", "L", "XL"],
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=600&fit=crop",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  }
+]
