@@ -69,7 +69,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, isOpen, onClose 
               </div>
             </div>
             
-            <div>
+            {/* <div>
               <h3 className="font-medium text-gray-900 mb-2">Color</h3>
               <div className="flex items-center gap-2">
                 <div
@@ -78,12 +78,12 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, isOpen, onClose 
                 />
                 <span className="text-sm text-gray-600 capitalize">{product.color}</span>
               </div>
-            </div>
+            </div> */}
             
-            <button className="w-full bg-black text-white py-3 px-6 rounded-md hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+            {/* <button className="w-full bg-black text-white py-3 px-6 rounded-md hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
               <ShoppingCart size={20} />
               Add to Cart
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

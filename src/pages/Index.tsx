@@ -71,7 +71,7 @@ const Index = () => {
                 <ArrowLeft className="w-5 h-5 mr-2" />
                 Back
               </Link>
-              <h1 className="text-2xl font-bold text-gray-900">MINIMALIST</h1>
+              <h1 className="text-2xl font-bold text-gray-900">UMMI BOUTIQUE</h1>
             </div>
             <div className="flex-1 max-w-md mx-8">
               <div className="relative">
