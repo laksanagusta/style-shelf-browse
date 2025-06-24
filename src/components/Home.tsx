@@ -1,7 +1,11 @@
+
 import React from 'react';
 import { ArrowRight, ShoppingBag, Star, Users, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Map from './Map';
+import ProductCard from './ProductCard';
+import { Product } from '../types/Product';
+import productsData from '../data/products.json';
 
 const Home = () => {
   const features = [
@@ -21,6 +25,14 @@ const Home = () => {
       description: "Ethically sourced and environmentally conscious fashion"
     }
   ];
+
+  // Get featured products (first 4 products)
+  const featuredProducts: Product[] = productsData.slice(0, 4);
+
+  const handleProductClick = (product: Product) => {
+    // Navigate to catalog page - the product detail will be handled there
+    window.location.href = '/catalog';
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -82,6 +94,41 @@ const Home = () => {
             src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop"
             alt="Fashion collection"
           />
+        </div>
+      </section>
+
+      {/* Featured Products Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:text-center mb-10">
+            <h2 className="text-base text-black font-semibold tracking-wide uppercase">Featured Products</h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Our bestsellers
+            </p>
+            <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+              Discover our most popular minimalist pieces that define contemporary style.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            {featuredProducts.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                onClick={handleProductClick}
+              />
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              to="/catalog"
+              className="inline-flex items-center px-6 py-3 border border-black text-base font-medium rounded-md text-black bg-white hover:bg-black hover:text-white transition-colors"
+            >
+              View All Products
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
+          </div>
         </div>
       </section>
 
