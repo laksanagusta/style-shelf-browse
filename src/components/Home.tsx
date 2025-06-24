@@ -11,18 +11,18 @@ const Home = () => {
   const features = [
     {
       icon: <ShoppingBag className="w-6 h-6" />,
-      title: "Premium Quality",
-      description: "Carefully curated fashion pieces made from the finest materials"
+      title: "Kualitas Premium",
+      description: "Koleksi fashion yang dipilih dengan teliti dari bahan-bahan terbaik"
     },
     {
       icon: <Star className="w-6 h-6" />,
-      title: "Minimalist Design",
-      description: "Clean, timeless pieces that elevate your everyday wardrobe"
+      title: "Desain Minimalis",
+      description: "Pakaian yang bersih dan timeless untuk meningkatkan gaya sehari-hari Anda"
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Sustainable Choice",
-      description: "Ethically sourced and environmentally conscious fashion"
+      title: "Pilihan Berkelanjutan",
+      description: "Fashion yang bersumber etis dan ramah lingkungan"
     }
   ];
 
@@ -46,13 +46,13 @@ const Home = () => {
                 to="/catalog" 
                 className="text-gray-600 hover:text-gray-900 transition-colors"
               >
-                Catalog
+                Katalog
               </Link>
               <Link 
                 to="/catalog" 
                 className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-colors"
               >
-                Shop Now
+                Belanja Sekarang
               </Link>
             </nav>
           </div>
@@ -66,12 +66,12 @@ const Home = () => {
             <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                  <span className="block xl:inline">Discover</span>{' '}
-                  <span className="block text-black xl:inline">minimalist fashion</span>
+                  <span className="block xl:inline">Temukan</span>{' '}
+                  <span className="block text-black xl:inline">fashion minimalis</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  Curated collection of timeless pieces designed for the modern minimalist. 
-                  Quality craftsmanship meets contemporary style.
+                  Koleksi kurasi pakaian timeless yang dirancang untuk minimalis modern. 
+                  Keahlian berkualitas bertemu dengan gaya kontemporer.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
@@ -79,7 +79,7 @@ const Home = () => {
                       to="/catalog"
                       className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-gray-800 md:py-4 md:text-lg md:px-10 transition-colors"
                     >
-                      Explore Collection
+                      Jelajahi Koleksi
                       <ArrowRight className="ml-2 w-5 h-5" />
                     </Link>
                   </div>
@@ -92,7 +92,7 @@ const Home = () => {
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop"
-            alt="Fashion collection"
+            alt="Koleksi fashion"
           />
         </div>
       </section>
@@ -101,12 +101,12 @@ const Home = () => {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center mb-10">
-            <h2 className="text-base text-black font-semibold tracking-wide uppercase">Featured Products</h2>
+            <h2 className="text-base text-black font-semibold tracking-wide uppercase">Produk Unggulan</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Our bestsellers
+              Produk terlaris kami
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Discover our most popular minimalist pieces that define contemporary style.
+              Temukan koleksi minimalis paling populer yang mendefinisikan gaya kontemporer.
             </p>
           </div>
           
@@ -125,7 +125,7 @@ const Home = () => {
               to="/catalog"
               className="inline-flex items-center px-6 py-3 border border-black text-base font-medium rounded-md text-black bg-white hover:bg-black hover:text-white transition-colors"
             >
-              View All Products
+              Lihat Semua Produk
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </div>
@@ -136,12 +136,12 @@ const Home = () => {
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-base text-black font-semibold tracking-wide uppercase">Why Choose Us</h2>
+            <h2 className="text-base text-black font-semibold tracking-wide uppercase">Mengapa Memilih Kami</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Fashion with purpose
+              Fashion dengan tujuan
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Every piece in our collection is thoughtfully selected to bring you the perfect balance of style, comfort, and sustainability.
+              Setiap produk dalam koleksi kami dipilih dengan cermat untuk memberikan Anda keseimbangan sempurna antara gaya, kenyamanan, dan keberlanjutan.
             </p>
           </div>
 
@@ -167,13 +167,13 @@ const Home = () => {
           <div className="lg:text-center mb-10">
             <div className="flex items-center justify-center mb-4">
               <MapPin className="w-6 h-6 text-black mr-2" />
-              <h2 className="text-base text-black font-semibold tracking-wide uppercase">Our Location</h2>
+              <h2 className="text-base text-black font-semibold tracking-wide uppercase">Lokasi Kami</h2>
             </div>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Visit our store
+              Kunjungi toko kami
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Find us at our physical location in Makassar. Experience our minimalist fashion collection in person.
+              Temukan kami di lokasi fisik kami di Makassar. Rasakan koleksi fashion minimalis kami secara langsung.
             </p>
           </div>
           <Map />
@@ -184,16 +184,16 @@ const Home = () => {
       <section className="bg-white">
         <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            <span className="block">Ready to upgrade your wardrobe?</span>
+            <span className="block">Siap meningkatkan lemari pakaian Anda?</span>
           </h2>
           <p className="mt-4 text-lg leading-6 text-gray-500">
-            Browse our carefully curated collection of minimalist fashion pieces.
+            Jelajahi koleksi fashion minimalis yang dipilih dengan cermat.
           </p>
           <Link
             to="/catalog"
             className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-gray-800 sm:w-auto transition-colors"
           >
-            Start Shopping
+            Mulai Berbelanja
             <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
         </div>
