@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Filter } from 'lucide-react';
 import { Filters } from '../types/Product';
@@ -40,10 +39,13 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
   };
 
   const handlePriceRangeChange = (range: { min: number; max: number }) => {
-    const isCurrentlySelected = filters.priceRange?.min === range.min && filters.priceRange?.max === range.max;
+    console.log('Price range clicked:', range);
+    console.log('Current filters.priceRange:', filters.priceRange);
+    
+    // Selalu set range yang dipilih, jangan toggle
     onFilterChange({ 
       ...filters, 
-      priceRange: isCurrentlySelected ? null : range 
+      priceRange: range 
     });
   };
 
@@ -130,11 +132,13 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
             <div className="space-y-2">
               {priceRanges.map((range, index) => {
                 const isSelected = filters.priceRange?.min === range.min && filters.priceRange?.max === range.max;
+                console.log(`Range ${range.label} selected:`, isSelected);
                 return (
                   <label key={index} className="flex items-center cursor-pointer">
                     <input
                       type="radio"
                       name="priceRange"
+                      value={`${range.min}-${range.max}`}
                       checked={isSelected}
                       onChange={() => handlePriceRangeChange(range)}
                       className="text-black focus:ring-black"
