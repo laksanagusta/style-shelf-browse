@@ -40,10 +40,10 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
   };
 
   const handlePriceRangeChange = (range: { min: number; max: number }) => {
-    const isSelected = filters.priceRange?.min === range.min && filters.priceRange?.max === range.max;
+    const isCurrentlySelected = filters.priceRange?.min === range.min && filters.priceRange?.max === range.max;
     onFilterChange({ 
       ...filters, 
-      priceRange: isSelected ? null : range 
+      priceRange: isCurrentlySelected ? null : range 
     });
   };
 
@@ -128,18 +128,21 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
           <div className="mb-6">
             <h3 className="font-medium text-gray-900 mb-3">Price Range</h3>
             <div className="space-y-2">
-              {priceRanges.map((range, index) => (
-                <label key={index} className="flex items-center">
-                  <input
-                    type="radio"
-                    name="priceRange"
-                    checked={filters.priceRange?.min === range.min && filters.priceRange?.max === range.max}
-                    onChange={() => handlePriceRangeChange(range)}
-                    className="text-black focus:ring-black"
-                  />
-                  <span className="ml-2 text-sm text-gray-700">{range.label}</span>
-                </label>
-              ))}
+              {priceRanges.map((range, index) => {
+                const isSelected = filters.priceRange?.min === range.min && filters.priceRange?.max === range.max;
+                return (
+                  <label key={index} className="flex items-center cursor-pointer">
+                    <input
+                      type="radio"
+                      name="priceRange"
+                      checked={isSelected}
+                      onChange={() => handlePriceRangeChange(range)}
+                      className="text-black focus:ring-black"
+                    />
+                    <span className="ml-2 text-sm text-gray-700">{range.label}</span>
+                  </label>
+                );
+              })}
             </div>
           </div>
 
