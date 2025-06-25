@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, ArrowLeft } from 'lucide-react';
+import { Search, ArrowLeft, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import FilterSidebar from '../components/FilterSidebar';
@@ -57,6 +57,14 @@ const Index = () => {
     setSelectedProduct(null);
   };
 
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/6281761215676', '_blank');
+  };
+
+  const handleTikTokClick = () => {
+    window.open('https://www.tiktok.com/@boutique_ummi', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -85,8 +93,30 @@ const Index = () => {
                 />
               </div>
             </div>
-            <div className="text-sm text-gray-600">
-              {filteredProducts.length} products
+            <div className="flex items-center space-x-4">
+              {/* WhatsApp Contact */}
+              <button
+                onClick={handleWhatsAppClick}
+                className="flex items-center space-x-2 text-green-600 hover:text-green-700 transition-colors"
+              >
+                <MessageCircle className="w-5 h-5" />
+                <span className="hidden sm:inline text-sm">WhatsApp</span>
+              </button>
+              
+              {/* TikTok Link */}
+              <button
+                onClick={handleTikTokClick}
+                className="flex items-center space-x-2 text-black hover:text-gray-700 transition-colors"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+                <span className="hidden sm:inline text-sm">TikTok</span>
+              </button>
+
+              <div className="text-sm text-gray-600">
+                {filteredProducts.length} products
+              </div>
             </div>
           </div>
         </div>
