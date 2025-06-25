@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Filter } from 'lucide-react';
 import { Filters } from '../types/Product';
@@ -39,13 +40,10 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
   };
 
   const handlePriceRangeChange = (range: { min: number; max: number }) => {
-    console.log('Price range clicked:', range);
-    console.log('Current filters.priceRange:', filters.priceRange);
-    
-    // Selalu set range yang dipilih, jangan toggle
+    const isSelected = filters.priceRange?.min === range.min && filters.priceRange?.max === range.max;
     onFilterChange({ 
       ...filters, 
-      priceRange: range 
+      priceRange: isSelected ? null : range 
     });
   };
 
@@ -127,28 +125,26 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
           </div>
 
           {/* Price Range */}
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <h3 className="font-medium text-gray-900 mb-3">Price Range</h3>
             <div className="space-y-2">
-              {priceRanges.map((range, index) => {
-                const isSelected = filters.priceRange?.min === range.min && filters.priceRange?.max === range.max;
-                console.log(`Range ${range.label} selected:`, isSelected);
-                return (
-                  <label key={index} className="flex items-center cursor-pointer">
-                    <input
-                      type="radio"
-                      name="priceRange"
-                      value={`${range.min}-${range.max}`}
-                      checked={isSelected}
-                      onChange={() => handlePriceRangeChange(range)}
-                      className="text-black focus:ring-black"
-                    />
-                    <span className="ml-2 text-sm text-gray-700">{range.label}</span>
-                  </label>
-                );
-              })}
+              {priceRanges.map((range, index) => (
+                <label key={index} className="flex items-center">
+                  <input
+                    type="radio"
+                    name="priceRange"
+                    checked={filters.priceRange?.min === range.min && filters.priceRange?.max === range.max}
+                    onChange={(e) => {
+                      e.preventDefault();
+                      handlePriceRangeChange(range);
+                    }}
+                    className="text-black focus:ring-black"
+                  />
+                  <span className="ml-2 text-sm text-gray-700">{range.label}</span>
+                </label>
+              ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Clear Filters */}
           <button
