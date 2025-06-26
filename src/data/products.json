@@ -1,83 +1,242 @@
-
 [
   {
     "id": 1,
-    "name": "Classic White Shirt",
+    "name": "Rok panjang katun",
     "price": 299000,
     "category": "shirts",
     "color": "white",
-    "sizes": ["All Size"],
-    "image": "/images/11.jpg",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/1.jpg",
     "description": "Kemeja putih klasik dengan bahan katun premium yang nyaman digunakan sehari-hari."
   },
   {
     "id": 2,
-    "name": "Black Denim Jacket",
+    "name": "Kemeja",
     "price": 449000,
     "category": "jackets",
     "color": "black",
-    "sizes": ["All Size"],
+    "sizes": [
+      "All Size"
+    ],
     "image": "/images/2.jpg",
     "description": "Jaket denim hitam dengan style modern dan versatile untuk berbagai occasion."
   },
   {
     "id": 3,
-    "name": "Blue Casual Pants",
+    "name": "Rajut import",
     "price": 349000,
     "category": "pants",
     "color": "blue",
-    "sizes": ["All Size"],
-    "image": "/images/10.jpg",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/3.jpg",
     "description": "Celana kasual biru navy dengan cut yang sempurna untuk gaya santai maupun formal."
   },
   {
     "id": 4,
-    "name": "Red Summer Dress",
+    "name": "Rajut kemeja",
     "price": 399000,
     "category": "dresses",
     "color": "red",
-    "sizes": ["All Size"],
+    "sizes": [
+      "All Size"
+    ],
     "image": "/images/4.jpg",
     "description": "Dress musim panas berwarna merah cerah dengan bahan yang ringan dan airy."
   },
   {
     "id": 5,
-    "name": "Gray Sweater",
+    "name": "Katun kemaja",
     "price": 279000,
     "category": "sweaters",
     "color": "gray",
-    "sizes": ["All Size"],
+    "sizes": [
+      "All Size"
+    ],
     "image": "/images/5.jpg",
     "description": "Sweater abu-abu dengan bahan wool blend yang hangat dan stylish."
   },
   {
     "id": 6,
-    "name": "White Sneakers",
+    "name": "Kemaja katun",
     "price": 599000,
     "category": "shoes",
     "color": "white",
-    "sizes": ["All Size"],
+    "sizes": [
+      "All Size"
+    ],
     "image": "/images/6.jpg",
     "description": "Sneakers putih minimalis dengan desain clean dan comfortable untuk daily wear."
   },
   {
     "id": 7,
-    "name": "Black Formal Pants",
+    "name": "Kemeja katun",
     "price": 389000,
     "category": "pants",
     "color": "black",
-    "sizes": ["All Size"],
+    "sizes": [
+      "All Size"
+    ],
     "image": "/images/7.jpg",
     "description": "Celana formal hitam dengan bahan premium untuk tampilan profesional."
   },
   {
     "id": 8,
-    "name": "Green Casual T-Shirt",
+    "name": "Jaket",
     "price": 199000,
     "category": "shirts",
     "color": "green",
-    "sizes": ["All Size"],
+    "sizes": [
+      "All Size"
+    ],
     "image": "/images/8.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 9,
+    "name": "Jaket parasut",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/9.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 10,
+    "name": "Setelan katbol import",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/10.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 11,
+    "name": "Batik katun",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/11.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 12,
+    "name": "Kemeja katun",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/12.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 13,
+    "name": "Kemeja katbol",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/13.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 14,
+    "name": "Rok panjang",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/14.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 15,
+    "name": "Rok panjang bhn suede",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/15.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 16,
+    "name": "Rok panjang plisket suede premium",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/16.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 17,
+    "name": "Kemeja soft jeans",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/17.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 18,
+    "name": "Kemeja katun",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/18.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 19,
+    "name": "Setelan rok katbol",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/19.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 20,
+    "name": "Gamis polos knit",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/20.jpg",
     "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
   }
 ]

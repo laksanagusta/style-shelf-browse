@@ -5,15 +5,13 @@ import { ArrowLeft, MapPin, Phone, Clock } from 'lucide-react';
 
 const Store = () => {
   const storeImages = [
-    '/images/1.jpg',
-    '/images/2.jpg', 
-    '/images/4.jpg',
-    '/images/5.jpg',
-    '/images/6.jpg',
-    '/images/7.jpg',
-    '/images/8.jpg',
-    '/images/10.jpg',
-    '/images/11.jpg'
+    '/images/toko1.jpg',
+    '/images/toko2.jpg', 
+    '/images/toko3.jpg',
+    '/images/toko4.jpg',
+    '/images/toko5.jpg',
+    '/images/toko6.jpg',
+    '/images/toko7.jpg',
   ];
 
   const storeInfo = {
