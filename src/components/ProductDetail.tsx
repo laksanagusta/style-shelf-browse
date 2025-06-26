@@ -44,9 +44,9 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, isOpen, onClose 
           
           <div className="space-y-6">
             <div>
-              <p className="text-3xl font-bold text-gray-900 mb-2">
+              {/* <p className="text-3xl font-bold text-gray-900 mb-2">
                 {formatPrice(product.price)}
-              </p>
+              </p> */}
               <p className="text-gray-600 capitalize">{product.category}</p>
             </div>
             

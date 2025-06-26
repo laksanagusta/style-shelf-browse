@@ -31,7 +31,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
       <div className="p-4">
         <h3 className="font-medium text-gray-900 mb-2 line-clamp-2">{product.name}</h3>
         <div className="flex items-center justify-between">
-          <p className="text-lg font-semibold text-gray-900">{formatPrice(product.price)}</p>
+          {/* <p className="text-lg font-semibold text-gray-900">{formatPrice(product.price)}</p> */}
           <div className="flex gap-1">
             {product.sizes.slice(0, 3).map((size) => (
               <span key={size} className="text-xs bg-gray-100 px-2 py-1 rounded">
