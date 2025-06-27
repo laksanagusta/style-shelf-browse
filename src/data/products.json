@@ -238,5 +238,125 @@
     ],
     "image": "/images/20.jpg",
     "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 21,
+    "name": "Kemeja Suede",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/21.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 22,
+    "name": "Jaket Anak",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/22.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 23,
+    "name": "Sweater Premium",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/23.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 24,
+    "name": "Kaos Anak",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/24.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 25,
+    "name": "Sweater Anak",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/25.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 26,
+    "name": "Rajut Premium",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/26.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 27,
+    "name": "Rok katun premium",
+    "price": 199000,
+    "category": "pants",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/27.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 28,
+    "name": "Setelan Celana Knit",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/28.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 29,
+    "name": "Gamis polos knit",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/29.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
+  },
+  {
+    "id": 30,
+    "name": "Rok",
+    "price": 199000,
+    "category": "shirts",
+    "color": "green",
+    "sizes": [
+      "All Size"
+    ],
+    "image": "/images/30.jpg",
+    "description": "T-shirt kasual hijau dengan bahan katun combed yang soft dan breathable."
   }
 ]
