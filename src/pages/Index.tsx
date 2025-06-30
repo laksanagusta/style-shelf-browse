@@ -1,5 +1,5 @@
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useCallback } from 'react';
 import { Search, MessageCircle, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
@@ -8,6 +8,8 @@ import ProductDetail from '../components/ProductDetail';
 import { Product, Filters } from '../types/Product';
 import productsData from '../data/products.json';
 
+const ITEMS_PER_PAGE = 12;
+
 const Index = () => {
   const [products] = useState<Product[]>(productsData);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -15,6 +17,8 @@ const Index = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
   const [filters, setFilters] = useState<Filters>({
     categories: [],
     colors: [],
@@ -48,6 +52,39 @@ const Index = () => {
       return true;
     });
   }, [products, searchTerm, filters]);
+
+  const paginatedProducts = useMemo(() => {
+    return filteredProducts.slice(0, currentPage * ITEMS_PER_PAGE);
+  }, [filteredProducts, currentPage]);
+
+  const hasMoreProducts = paginatedProducts.length < filteredProducts.length;
+
+  const loadMore = useCallback(() => {
+    if (hasMoreProducts && !isLoading) {
+      setIsLoading(true);
+      // Simulate loading time
+      setTimeout(() => {
+        setCurrentPage(prev => prev + 1);
+        setIsLoading(false);
+      }, 500);
+    }
+  }, [hasMoreProducts, isLoading]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000) {
+        loadMore();
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [loadMore]);
+
+  // Reset pagination when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, filters]);
 
   const handleProductClick = (product: Product) => {
     setSelectedProduct(product);
@@ -223,15 +260,43 @@ const Index = () => {
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {filteredProducts.map((product) => (
-                  <ProductCard
-                    key={product.id}
-                    product={product}
-                    onClick={handleProductClick}
-                  />
-                ))}
-              </div>
+              <>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                  {paginatedProducts.map((product) => (
+                    <ProductCard
+                      key={product.id}
+                      product={product}
+                      onClick={handleProductClick}
+                    />
+                  ))}
+                </div>
+                
+                {/* Loading Spinner */}
+                {isLoading && (
+                  <div className="flex justify-center items-center py-8">
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-black"></div>
+                  </div>
+                )}
+                
+                {/* Load More Button (fallback) */}
+                {hasMoreProducts && !isLoading && (
+                  <div className="flex justify-center mt-8">
+                    <button
+                      onClick={loadMore}
+                      className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors"
+                    >
+                      Load More
+                    </button>
+                  </div>
+                )}
+                
+                {/* End Message */}
+                {!hasMoreProducts && paginatedProducts.length > ITEMS_PER_PAGE && (
+                  <div className="text-center py-8">
+                    <p className="text-gray-500">You've reached the end of the catalog</p>
+                  </div>
+                )}
+              </>
             )}
           </div>
         </div>
