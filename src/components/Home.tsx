@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowRight, ShoppingBag, Star, Users, MapPin, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useOffline } from '../contexts/OfflineContext';
 import Navigation from './Navigation';
 import Map from './Map';
 import ProductCard from './ProductCard';
@@ -9,8 +8,6 @@ import { Product } from '../types/Product';
 import productsData from '../data/products.json';
 
 const Home = () => {
-  const { toggleOffline } = useOffline();
-  
   const features = [
     {
       icon: <ShoppingBag className="w-6 h-6" />,
@@ -194,17 +191,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Hidden Admin Control */}
-      <div className="fixed bottom-4 right-4">
-        <button
-          onClick={toggleOffline}
-          className="opacity-10 hover:opacity-100 transition-opacity bg-red-500 text-white px-3 py-1 rounded text-xs"
-          title="Admin: Toggle Offline Mode"
-        >
-          Offline Mode
-        </button>
-      </div>
     </div>
   );
 };

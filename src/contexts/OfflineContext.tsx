@@ -20,7 +20,7 @@ interface OfflineProviderProps {
 }
 
 export const OfflineProvider: React.FC<OfflineProviderProps> = ({ children }) => {
-  const [isOffline, setIsOffline] = useState(false);
+  const [isOffline, setIsOffline] = useState(true); // Set to true for offline mode
 
   const toggleOffline = () => {
     setIsOffline(prev => !prev);
